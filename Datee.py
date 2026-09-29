@@ -1,14 +1,15 @@
-
-from datetime import datetime, timedelta
-from zoneinfo import ZoneInfo
+# Datee.py
+from datetime import datetime
 
 from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
 
-from BirthBot import async_save_date
 from configur import ADMIN as AD
 from datebase import datebase as dt
+
+# ИМПОРТИРУЕМ ИЗ saver, А НЕ ИЗ BirthBot!
+from saver import async_save_date
 
 database = dt
 router = Router()

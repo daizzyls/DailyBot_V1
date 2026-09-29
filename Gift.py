@@ -1,13 +1,13 @@
 
 
-
+# Gift.py
 from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
 
-from BirthBot import ADMIN as AD
-from BirthBot import async_save_congratulations, congrat
+from configur import ADMIN as AD
 from datebase import datebase as dt
+from saver import async_save_congratulations, congrat
 
 database = dt
 router = Router()

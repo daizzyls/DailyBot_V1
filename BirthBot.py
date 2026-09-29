@@ -59,23 +59,6 @@ async def strart_instruction(message: Message):
     )
 
 
-# ------------------save-functions---------------------------------------
-def save_date():
-    with open("datebase.py", "w", encoding="utf-8") as data:
-        data.write(f"datebase = {database}")
-
-
-async def async_save_date():
-    await asyncio.to_thread(save_date)
-
-
-def save_congratulations():
-    with open("congratulations.py", "w", encoding="utf-8") as prize:
-        prize.write("congratulations = " + repr(congrat) + "\n")
-
-
-async def async_save_congratulations():
-    await asyncio.to_thread(save_congratulations)
 
 
 # =========================LAUNCH========================= #
