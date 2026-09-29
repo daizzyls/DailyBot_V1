@@ -3,7 +3,8 @@ from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
 
-from BirthBot import ADMIN as AD
+# Импортируем из config, а не из BirthBot!
+from configur import ADMIN as AD
 from datebase import datebase as dt
 
 database = dt
