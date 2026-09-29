@@ -1,0 +1,3 @@
+congratulations = [
+    'Поздравляю, {name}!\n',
+]
